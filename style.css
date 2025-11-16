@@ -1,0 +1,874 @@
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2")
+    format("woff2");
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2")
+    format("woff2");
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2")
+    format("woff2");
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TestDomaineSansDisplay-medium";
+  src: url(/font/TestDomaineSansDisplay-Medium-BF66174d37eec1b.otf)
+    format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TestDomaineSansDisplay-mediumitalic";
+  src: url(/font/TestDomaineSansDisplay-MediumItalic-BF66174d377687a.otf)
+    format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+.component .swiper,
+.component .swiper-wrapper,
+.component .swiper-pagination,
+.component .swiper-button-next,
+.component .swiper-button-prev {
+  z-index: auto;
+}
+/* .swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+  box-sizing: content-box;
+}
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  display: block;
+}
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical>.swiper-pagination-bullets {
+  right: var(--swiper-pagination-right, 8px);
+  left: var(--swiper-pagination-left, auto);
+  top: 50%;
+  transform: translate3d(0px, -50%, 0);
+}
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: .3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.swiper-horizontal>.swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    width: 100%;
+    height: var(--swiper-pagination-progressbar-size, 4px);
+    left: 0;
+    top: 0;
+}
+.swiper-pagination-progressbar {
+    background: var(--swiper-pagination-progressbar-bg-color, rgba(0, 0, 0, .25));
+    position: absolute;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: var(--swiper-pagination-color, var(--swiper-theme-color));
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transform-origin: left top;
+}
+
+.swiper-pagination-fraction {
+    color: var(--swiper-pagination-fraction-color, inherit);
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 10px);
+  right: auto;
+}
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: var(--swiper-navigation-top-offset, 50%);
+  width: calc(var(--swiper-navigation-size) / 44* 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px -(var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+  .swiper-button-next:after, .swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}
+.swiper-scrollbar.swiper-scrollbar-vertical, .swiper-vertical>.swiper-scrollbar {
+  position: absolute;
+  left: var(--swiper-scrollbar-left, auto);
+  right: var(--swiper-scrollbar-right, 4px);
+  top: var(--swiper-scrollbar-sides-offset, 1%);
+  z-index: 50;
+  width: var(--swiper-scrollbar-size, 4px);
+  height: calc(100% - 2* var(--swiper-scrollbar-sides-offset, 1%));
+}
+.swiper-scrollbar {
+  border-radius: var(--swiper-scrollbar-border-radius, 10px);
+  position: relative;
+  touch-action: none;
+  background: var(--swiper-scrollbar-bg-color, rgba(0, 0, 0, .1));
+} */
+
+/* ---- 노멀라이즈 ---- */
+/* body 기본상태로 커스텀 */
+/* * 전체선택자: 모든 선택자를 선택 */
+* {
+  letter-spacing: -0.02em;
+}
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* 폰트 적용 */
+/* body {
+  font-family: sans-serif;
+} */
+/* h태그 노멀라이즈 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+  /* inherit -> 기본값 */
+  font-size: inherit;
+}
+/* 컬러 기본값, a태그 밑줄제거 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---- 라이브러리 ---- */
+.fw-100 {
+  font-weight: 100;
+}
+.fw-200 {
+  font-weight: 200;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+.fw-900 {
+  font-weight: 900;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+.fs-11 {
+  font-size: 11px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-13 {
+  font-size: 13px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-21 {
+  font-size: 21px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-26 {
+  font-size: 26px;
+}
+.fs-28 {
+  font-size: 28px;
+}
+.fs-31 {
+  font-size: 31px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-34 {
+  font-size: 34px;
+}
+.fs-38 {
+  font-size: 38px;
+}
+.fs-42 {
+  font-size: 42px;
+}
+.fs-46 {
+  font-size: 46px;
+}
+.fs-48 {
+  font-size: 48px;
+}
+.fs-50 {
+  font-size: 50px;
+}
+.fs-52 {
+  font-size: 52px;
+}
+.fs-54 {
+  font-size: 54px;
+}
+.fs-56 {
+  font-size: 56px;
+}
+.fs-58 {
+  font-size: 58px;
+}
+.fs-62 {
+  font-size: 62px;
+}
+.fs-64 {
+  font-size: 64px;
+}
+.fs-68 {
+  font-size: 68px;
+}
+.fs-72 {
+  font-size: 72px;
+}
+
+.fc-fff {
+  color: #fff;
+}
+.fc-222 {
+  color: #222;
+}
+.fc-4f4f4f {
+  color: #4f4f4f;
+}
+
+/* 여백/패딩 */
+.pt-4 {
+  padding-top: 4px;
+}
+.pt-8 {
+  padding-top: 8px;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+.pt-12 {
+  padding-top: 12px;
+}
+.pt-16 {
+  padding-top: 16px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pt-24 {
+  padding-top: 24px;
+}
+.pt-28 {
+  padding-top: 28px;
+}
+.pt-32 {
+  padding-top: 32px;
+}
+.pt-36 {
+  padding-top: 36px;
+}
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pl-4 {
+  padding-left: 4px;
+}
+.pl-10 {
+  padding-left: 10px;
+}
+.pl-8 {
+  padding-left: 8px;
+}
+.pl-12 {
+  padding-left: 12px;
+}
+.pl-16 {
+  padding-left: 16px;
+}
+.pl-20 {
+  padding-left: 20px;
+}
+.pl-24 {
+  padding-left: 24px;
+}
+.pl-28 {
+  padding-left: 28px;
+}
+.pl-32 {
+  padding-left: 32px;
+}
+.pl-36 {
+  padding-left: 36px;
+}
+.pl-40 {
+  padding-left: 40px;
+}
+
+.pr-4 {
+  padding-right: 4px;
+}
+.pr-8 {
+  padding-right: 8px;
+}
+.pr-10 {
+  padding-right: 10px;
+}
+.pr-12 {
+  padding-right: 12px;
+}
+.pr-16 {
+  padding-right: 16px;
+}
+.pr-20 {
+  padding-right: 20px;
+}
+.pr-24 {
+  padding-right: 24px;
+}
+.pr-28 {
+  padding-right: 28px;
+}
+.pr-32 {
+  padding-right: 32px;
+}
+.pr-36 {
+  padding-right: 36px;
+}
+.pr-40 {
+  padding-right: 40px;
+}
+
+.pb-4 {
+  padding-bottom: 4px;
+}
+.pb-8 {
+  padding-bottom: 8px;
+}
+.pb-10 {
+  padding-bottom: 10px;
+}
+.pb-12 {
+  padding-bottom: 12px;
+}
+.pb-16 {
+  padding-bottom: 16px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+.pb-24 {
+  padding-bottom: 24px;
+}
+.pb-28 {
+  padding-bottom: 28px;
+}
+.pb-32 {
+  padding-bottom: 32px;
+}
+.pb-36 {
+  padding-bottom: 36px;
+}
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+/* 여백/마진 */
+.mt-4 {
+  margin-top: 4px;
+}
+.mt-8 {
+  margin-top: 8px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-12 {
+  margin-top: 12px;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-24 {
+  margin-top: 24px;
+}
+.mt-28 {
+  margin-top: 28px;
+}
+.mt-32 {
+  margin-top: 32px;
+}
+.mt-36 {
+  margin-top: 36px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+
+.ml-4 {
+  margin-left: 4px;
+}
+.ml-8 {
+  margin-left: 8px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.ml-12 {
+  margin-left: 12px;
+}
+.ml-16 {
+  margin-left: 16px;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+.ml-24 {
+  margin-left: 24px;
+}
+.ml-28 {
+  margin-left: 28px;
+}
+.ml-32 {
+  margin-left: 32px;
+}
+.ml-36 {
+  margin-left: 36px;
+}
+.ml-40 {
+  margin-left: 40px;
+}
+
+.mr-4 {
+  margin-right: 4px;
+}
+.mr-8 {
+  margin-right: 8px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mr-12 {
+  margin-right: 12px;
+}
+.mr-16 {
+  margin-right: 16px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mr-24 {
+  margin-right: 24px;
+}
+.mr-28 {
+  margin-right: 28px;
+}
+.mr-32 {
+  margin-right: 32px;
+}
+.mr-36 {
+  margin-right: 36px;
+}
+.mr-40 {
+  margin-right: 40px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-28 {
+  margin-bottom: 28px;
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
+.mb-36 {
+  margin-bottom: 36px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+/* 라이브러리 */
+.border-red {
+  border: 5px solid red;
+}
+
+.border-blue {
+  border: 5px solid blue;
+}
+
+.border-black {
+  border: 5px solid black;
+}
+
+.border-green {
+  border: 5px solid green;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+.flex-as-c {
+  align-self: center;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.block {
+  display: block;
+}
+
+.height-100p {
+  height: 100%;
+}
+
+.h-950p {
+  height: 950px;
+}
+
+.con {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-box > img {
+  width: 100%;
+  display: block;
+}
+
+/* 커스텀 */
+.con-min-width {
+  min-width: 1640px;
+}
+
+.con {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.sansation-light {
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.sansation-regular {
+  font-family: "Sansation", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sansation-bold {
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sansation-light-italic {
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.sansation-regular-italic {
+  font-family: "Sansation", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.sansation-bold-italic {
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.nanum-square-round-Light {
+  font-family: "NanumSquareRoundLight";
+  font-weight: 300;
+  font-style: normal;
+}
+
+.nanum-square-round {
+  font-family: "NanumSquareRound";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nanum-square-round-Bold {
+  font-family: "NanumSquareRoundBold";
+  font-weight: 500;
+  font-style: normal;
+}
+
+.nanum-square-round-ExtraBold {
+  font-family: "NanumSquareRoundExtraBold";
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* header시작 */
+
+header {
+  position: relative;
+}
+
+/* 상단이미지 */
+header > img {
+  position: absolute;
+  width: 643px;
+  height: 183px;
+}
+
+header .con {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+/* 로고이미지 */
+header .con .logo img {
+  width: 193px;
+  height: 41px;
+  padding: 70px 0 55px;
+}
+
+/* 메뉴바시작 */
+header .con .gnb {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+
+header .con .gnb > ul {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+header .con .gnb > ul ul {
+  display: none;
+}
+
+header .con .gnb > ul > li:hover > ul {
+  display: block;
+}
+
+header .con .gnb > ul > li > a {
+  display: block;
+  font-size: 20px;
+  width: 100%;
+  margin: 0 37px 57px;
+}
+
+header .con .gnb::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: #111;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+
+header .con .gnb:hover::after {
+  width: 100%;
+}
+
+header .con .gnb > ul > li {
+  position: relative;
+}
+
+header .con .gnb > ul li::after {
+  content: "";
+  position: absolute;
+  top: 43px;
+  left: 45%;
+  width: 12px;
+  height: 7px;
+  background: #111;
+  border-radius: 7px 7px 0 0;
+  transition: opacity 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+header .con .gnb > ul li:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
+
+header .con .gnb ul > li > ul > li > a {
+  text-align: center;
+  display: block;
+  margin: 27px 0;
+}
+
+/* 메뉴바 끝 */
