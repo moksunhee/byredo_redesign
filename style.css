@@ -876,27 +876,36 @@ header .con {
   align-items: center;
   flex-direction: column;
   position: relative;
+  backdrop-filter: blur(10px);
 }
 
 /* 로고이미지 */
 header .con .logo img {
   width: 193px;
   height: 41px;
-  padding: 70px 0 55px;
+  padding: 70px 0 0px;
 }
 
 /* 메뉴바시작 */
 header .con .gnb {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
+  gap: 235px;
 }
 
 header .con .gnb > ul {
   display: flex;
   justify-content: center;
-  width: 50%;
+}
+
+header .con .gnb > ul:nth-child(2) {
+  flex-shrink: 1;
+}
+
+header .con .gnb > ul:nth-child(1) {
+  padding-left: 67px;
 }
 
 header .con .gnb > ul ul {
@@ -1012,7 +1021,7 @@ main .sec_1 .main_content .main_txt {
   position: absolute;
   font-size: 90px;
   line-height: 96px;
-  top: 300px;
+  top: 410px;
 }
 
 main .sec_1 .main_content .main-image-area {
@@ -1031,7 +1040,7 @@ main .sec_1 .main_content .main-description {
   margin-top: -10px;
 }
 
-main .sec_1 .main_content > button {
+main .sec_1 .main_content > .button {
   font-size: 16px;
   background-color: transparent;
   border-radius: 0;
