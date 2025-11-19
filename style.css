@@ -213,7 +213,8 @@
 }
 body,
 ul,
-li {
+li,
+p {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -692,6 +693,11 @@ a {
   margin-right: auto;
 }
 
+.con-min-width {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .img-box > img {
   width: 100%;
   display: block;
@@ -700,6 +706,8 @@ a {
 /* 커스텀 */
 .con-min-width {
   min-width: 1640px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .con {
@@ -881,32 +889,23 @@ header > img {
   background: rgba(255, 255, 255, 0.13);
 }
 
-/* 서브메뉴도 블러 적용
-.menu-blur-box .gnb ul ul {
-  background: rgba(255,255,255,0.13);
-  backdrop-filter: blur(12px);
-  padding: 20px 0;
-  position: absolute;
-} */
-
-
 header .con {
   display: flex;
   align-items: center;
   flex-direction: column;
   position: relative;
-
 }
-header .con:hover {
-  backdrop-filter: blur(10px);
-}
-
 
 /* 로고이미지 */
+header .con .logo {
+  position: absolute;
+  z-index: 1;
+}
+
 header .con .logo img {
   width: 193px;
   height: 41px;
-  padding: 70px 0 0px;
+  padding: 50px 40px 0px 0px;
 }
 
 /* 메뉴바시작 */
@@ -923,6 +922,7 @@ header .con .gnb > ul {
   justify-content: center;
 }
 
+/* 메뉴바 가운데 여백 */
 header .con .gnb > ul:nth-child(2) {
   flex-shrink: 1;
 }
@@ -931,6 +931,7 @@ header .con .gnb > ul:nth-child(1) {
   padding-left: 67px;
 }
 
+/* 2차메뉴 */
 header .con .gnb > ul ul {
   display: none;
 }
@@ -942,14 +943,14 @@ header .con .gnb > ul > li:hover > ul {
 header .con .gnb > ul > li > a {
   display: block;
   font-size: 20px;
-  width: 100%;
-  margin: 0 37px 57px;
+  padding: 35px 30px;
 }
 
+/* 메뉴라인 */
 header .con .gnb::after {
   content: "";
   position: absolute;
-  top: 50px;
+  top: 135px;
   left: 50%;
   bottom: 0;
   width: 0;
@@ -959,18 +960,11 @@ header .con .gnb::after {
   transition: 0.3s;
 }
 
-header .con .gnb:hover::after {
-  width: 100%;
-}
-
-header .con .gnb > ul > li {
-  position: relative;
-}
-
+/* 메뉴반점 */
 header .con .gnb > ul li::after {
   content: "";
   position: absolute;
-  top: 43px;
+  top: 129px;
   left: 45%;
   width: 12px;
   height: 7px;
@@ -981,29 +975,32 @@ header .con .gnb > ul li::after {
   visibility: hidden;
 }
 
+header .con .gnb:hover::after {
+  width: 100%;
+}
+
+header .con .gnb > ul > li {
+  position: relative;
+  padding-top: 40px;
+}
+
 header .con .gnb > ul li:hover::after {
   opacity: 1;
   visibility: visible;
   transition: opacity 0.5s;
 }
 
+/* 2차메뉴 텍스트 */
 header .con .gnb ul > li > ul > li > a {
   text-align: center;
   display: block;
   margin: 27px 0;
 }
 
-/* header .con .gnb ul li:hover > a {
-  font-weight: 600;
-  color: #4f4f4f;
-
-} */
-
 header .con .gnb ul > li > ul > li:hover > a {
   font-weight: 600;
   color: #4f4f4f;
 }
-
 
 /* --- 스크롤 시 효과 클래스 (JS에서 추가됨) --- */
 .header.scrolled .header-top-img {
@@ -1026,6 +1023,9 @@ header .con .gnb ul > li > ul > li:hover > a {
   justify-content: center;
   gap: 120px;
   transition: 0.4s ease;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.13);
+  margin-top: -40px;
 }
 
 .header.scrolled .center-menu {
@@ -1041,13 +1041,12 @@ header .con .gnb ul > li > ul > li:hover > a {
   gap: 0px;
 }
 
-
 /* 메뉴바 끝 */
 
 /* main시작 */
 
 main .sec_1 {
-  height: 1600px;
+  height: 1500px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -1062,7 +1061,16 @@ main .sec_1 .main_content {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 540px;
+  padding-top: 410px;
+}
+
+main .sec_1 .main_content .main_txt {
+  font-family: "TestDomaineSansDisplay-medium";
+  display: inline-block;
+  position: absolute;
+  font-size: 90px;
+  line-height: 96px;
+  top: 280px;
 }
 
 main .sec_1 .main_content .main_side_txt > p {
@@ -1073,16 +1081,15 @@ main .sec_1 .main_content .main_side_txt > p {
   color: #b2b2b4;
   font-size: 36px;
   left: 100px;
-  top: 50%;
+  top: 45%;
 }
 
-main .sec_1 .main_content .main_txt {
-  font-family: "TestDomaineSansDisplay-medium";
-  display: inline-block;
-  position: absolute;
-  font-size: 90px;
-  line-height: 96px;
-  top: 410px;
+main .sec_1 .main_content .main-description {
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 21px;
+  margin-top: -7x;
 }
 
 main .sec_1 .main_content .main-image-area {
@@ -1093,14 +1100,6 @@ main .sec_1 .main_content .main-image-area > img {
   width: 620px;
 }
 
-main .sec_1 .main_content .main-description {
-  font-family: "Sansation", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 21px;
-  margin-top: -10px;
-}
-
 main .sec_1 .main_content > .button {
   font-size: 16px;
   background-color: transparent;
@@ -1109,5 +1108,79 @@ main .sec_1 .main_content > .button {
   font-family: "Pretendard";
   font-weight: 400;
   padding: 13px 76px;
-  margin-top: 53px;
+  margin-top: 40px;
+}
+
+/* sec_1 끝 */
+
+/* sec_2 시작 */
+
+main .sec_2 {
+}
+
+main .sec_2 .img-box > img {
+  height: 376px;
+}
+
+/* sec_2 끝 */
+
+/* sec_3 시작 */
+main .sec_3 .sec_3_inner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+main .sec_3 .sec_3_inner .brand_txt_leftline {
+  position: relative;
+  padding-left: 215px;
+}
+
+main .sec_3 .sec_3_inner .brand_txt_leftline > span {
+  font-family: "TestDomaineSansDisplay-medium";
+  display: inline-block;
+  position: absolute;
+  transform: rotate(90deg);
+  color: #000000;
+  font-size: 110px;
+  left: -46px;
+  top: 220px;
+}
+
+main .sec_3 .sec_3_inner .brand_txt_leftline > img {
+  height: 570px;
+}
+
+main .sec_3 .sec_3_inner .right_line > img {
+  height: 346px;
+}
+
+main .sec_3 .sec_3_inner .brand_story_text {
+  padding: 110px 40px;
+  width: 1390px;
+  line-height: 34px;
+}
+
+main .sec_3 .sec_3_inner .brand_story_text > div > p {
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  display: inline-block;
+  font-size: 20px;
+}
+
+main .sec_3 .sec_3_inner .brand_story_text > div > p > span {
+  font-family: "Sansation", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+}
+
+main .sec_3 .sec_3_inner .brand_story_text .bottom_txt {
+  text-align: end;
+  margin-top: 138px;
+}
+
+main .sec_3 .sec_3_inner .right_line {
+  padding-top: 110px;
 }
