@@ -1115,9 +1115,6 @@ main .sec_1 .main_content > .button {
 
 /* sec_2 시작 */
 
-main .sec_2 {
-}
-
 main .sec_2 .img-box > img {
   height: 376px;
 }
@@ -1125,18 +1122,20 @@ main .sec_2 .img-box > img {
 /* sec_2 끝 */
 
 /* sec_3 시작 */
-main .sec_3 .sec_3_inner {
+
+/* sec_3_top 시작 */
+main .sec_3 .sec_3_top {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-main .sec_3 .sec_3_inner .brand_txt_leftline {
+main .sec_3 .sec_3_top .brand_txt_leftline {
   position: relative;
   padding-left: 215px;
 }
 
-main .sec_3 .sec_3_inner .brand_txt_leftline > span {
+main .sec_3 .sec_3_top .brand_txt_leftline > span {
   font-family: "TestDomaineSansDisplay-medium";
   display: inline-block;
   position: absolute;
@@ -1147,21 +1146,21 @@ main .sec_3 .sec_3_inner .brand_txt_leftline > span {
   top: 220px;
 }
 
-main .sec_3 .sec_3_inner .brand_txt_leftline > img {
+main .sec_3 .sec_3_top .brand_txt_leftline > img {
   height: 570px;
 }
 
-main .sec_3 .sec_3_inner .right_line > img {
+main .sec_3 .sec_3_top .right_line > img {
   height: 346px;
 }
 
-main .sec_3 .sec_3_inner .brand_story_text {
+main .sec_3 .sec_3_top .brand_story_text {
   padding: 110px 40px;
   width: 1390px;
   line-height: 34px;
 }
 
-main .sec_3 .sec_3_inner .brand_story_text > div > p {
+main .sec_3 .sec_3_top .brand_story_text > div > p {
   font-family: "Sansation", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -1169,18 +1168,104 @@ main .sec_3 .sec_3_inner .brand_story_text > div > p {
   font-size: 20px;
 }
 
-main .sec_3 .sec_3_inner .brand_story_text > div > p > span {
+main .sec_3 .sec_3_top .brand_story_text > div > p > span {
   font-family: "Sansation", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 22px;
 }
 
-main .sec_3 .sec_3_inner .brand_story_text .bottom_txt {
+main .sec_3 .sec_3_top .brand_story_text .bottom_txt {
   text-align: end;
   margin-top: 138px;
 }
 
-main .sec_3 .sec_3_inner .right_line {
+main .sec_3 .sec_3_top .right_line {
   padding-top: 110px;
+}
+
+/* sec_3_top 끝 */
+
+/* sec_3_bottom 시작 */
+
+main .sec_3 .sec_3_bottom {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 110px 0 180px;
+}
+
+main .sec_3 .sec_3_bottom > ul {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main .sec_3 .sec_3_bottom > ul > li {
+  margin-left: 40px;
+  width: 323px;
+}
+
+main .sec_3 .sec_3_bottom > ul > li > img {
+  height: 432px;
+}
+
+main .sec_3 .sec_3_bottom > ul > li > p {
+  padding: 15px 30px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 50px 0;
+}
+
+main .sec_3 .sec_3_bottom > ul > li > .button {
+  padding: 12px 30px 8px;
+  background-color: #e7e5e1;
+}
+
+/* sec_3_bottom 끝 */
+
+/* sec_3 끝 */
+
+/* sec_4 시작 */
+
+main .sec_4 {
+  /* border: 1px solid red; */
+  background-color: #fcf9f2;
+  padding: 130px 0 100px;
+}
+
+main .sec_4 .sec_4_banner {
+  width: 100%;
+  margin: 0 auto;
+  margin-right: 0;
+}
+
+main .sec_4 .sec_4_banner .sec_4_ani_txt {
+  white-space: nowrap;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+main .sec_4 .sec_4_banner .sec_4_ani_txt > p {
+  display: inline-block;
+  font-family: "TestDomaineSansDisplay-medium";
+  font-size: 120px;
+  animation: text-to-left 70s linear infinite;
+}
+
+/*오른쪽에서 왼쪽 애니메이션*/
+@keyframes text-to-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+main .sec_4 .sec_4_img > img {
+  width: 100%;
+  margin-top: 20px;
 }
