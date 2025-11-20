@@ -884,11 +884,6 @@ header > img {
   opacity: 0;
 }
 
-.header:hover .menu-blur-box {
-  backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.13);
-}
-
 header .con {
   display: flex;
   align-items: center;
@@ -906,6 +901,21 @@ header .con .logo img {
   width: 193px;
   height: 41px;
   padding: 50px 40px 0px 0px;
+}
+
+/* 헤더 아이콘 */
+
+.header .con .ico {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  display: none;
+}
+
+/* 헤더 블러 */
+.header:hover .menu-blur-box {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.13);
 }
 
 /* 메뉴바시작 */
@@ -1052,8 +1062,6 @@ main .sec_1 {
   position: relative;
 }
 
-/* 사이즈텍스트 */
-
 main .sec_1 .main_content {
   width: 916px;
   position: relative;
@@ -1132,7 +1140,7 @@ main .sec_3 .sec_3_top {
 
 main .sec_3 .sec_3_top .brand_txt_leftline {
   position: relative;
-  padding-left: 215px;
+  padding-left: 70px;
 }
 
 main .sec_3 .sec_3_top .brand_txt_leftline > span {
@@ -1142,7 +1150,7 @@ main .sec_3 .sec_3_top .brand_txt_leftline > span {
   transform: rotate(90deg);
   color: #000000;
   font-size: 110px;
-  left: -46px;
+  left: -190px;
   top: 220px;
 }
 
@@ -1189,7 +1197,7 @@ main .sec_3 .sec_3_top .right_line {
 /* sec_3_bottom 시작 */
 
 main .sec_3 .sec_3_bottom {
-  max-width: 1920px;
+  width: 1760px;
   margin: 0 auto;
   padding: 110px 0 180px;
 }
@@ -1212,17 +1220,37 @@ main .sec_3 .sec_3_bottom > ul > li > img {
   height: 432px;
 }
 
-main .sec_3 .sec_3_bottom > ul > li > p {
+main .sec_3 .sec_3_bottom > ul > li > .p_design {
+  margin: 50px 0;
+}
+
+main .sec_3 .sec_3_bottom > ul > li > .button_design {
+  padding: 12px 30px 8px;
+  background-color: #e7e5e1;
+}
+
+/* 커스텀 */
+.p_design {
+  width: 265px;
+  padding: 15px 30px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+}
+
+.a_design {
+  padding: 12px 30px 12px;
+  background-color: #e7e5e1;
+  width: 185px;
+  display: block;
+  margin: 0 auto;
+}
+/* main .sec_3 .sec_3_bottom > ul > li > .p_design {
   padding: 15px 30px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   margin: 50px 0;
-}
-
-main .sec_3 .sec_3_bottom > ul > li > .button {
-  padding: 12px 30px 8px;
-  background-color: #e7e5e1;
-}
+} */
 
 /* sec_3_bottom 끝 */
 
@@ -1233,7 +1261,7 @@ main .sec_3 .sec_3_bottom > ul > li > .button {
 main .sec_4 {
   /* border: 1px solid red; */
   background-color: #fcf9f2;
-  padding: 130px 0 100px;
+  padding: 30px 0 100px;
 }
 
 main .sec_4 .sec_4_banner {
@@ -1268,4 +1296,98 @@ main .sec_4 .sec_4_banner .sec_4_ani_txt > p {
 main .sec_4 .sec_4_img > img {
   width: 100%;
   margin-top: 20px;
+}
+
+/* sec_4 끝 */
+
+/* sec_5 시작 */
+main .sec_5 {
+  text-align: center;
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #f4efe8;
+  padding: 100px 0 100px;
+}
+
+main .sec_5 .sec_5_sub_prd > p {
+  margin-bottom: 55px;
+  display: block;
+}
+
+main .sec_5 .sec_5_sub_prd > a {
+  margin-top: 65px;
+  background-color: #000000;
+  color: #f4efe8;
+}
+
+main .sec_5 div .grid_container {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+main .sec_5 div .grid_container .grid_item > a > img {
+  width: 250px;
+}
+
+main .sec_5 div .grid_container .grid_item {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.default,
+.hoverimg {
+  width: 100%;
+  display: block;
+}
+
+main .sec_5 div .grid_container .hoverimg {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+}
+
+main .sec_5 div .grid_container .grid_item:hover .default {
+  opacity: 0;
+}
+
+main .sec_5 div .grid_container .grid_item:hover .hoverimg {
+  opacity: 1;
+}
+
+/* sec_5 끝 */
+
+/* sec_5 시작 */
+main .sec_6 {
+  text-align: center;
+  width: 1640px;
+}
+
+main .sec_6 .sec_6_sub_prd_2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px 0 0;
+}
+
+main .sec_6 .sec_6_sub_prd_2 .left_txt_box {
+  margin-top: 500px;
+}
+
+main .sec_6 .sec_6_sub_prd_2 .left_txt_box > p {
+  margin-bottom: 25px;
+}
+
+main .sec_6 .sec_6_sub_prd_2 .left_txt_box > a {
+  width: 130px;
+}
+
+main .sec_6 .sec_6_sub_prd_2 .right_img_box > img {
+  width: 1060px;
 }
