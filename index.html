@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Byredo</title>
     <link rel="stylesheet" href="./style.css" />
+
     <!-- 구글 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -167,7 +168,7 @@
             <img src="./BYREDO_img/2_line_2.png" alt="line_left" />
           </div>
           <div class="brand_story_text">
-            <div class="top_txt">
+            <div class="top_txt txt">
               <p>
                 <span>— where memories become modern emotions.</span><br />
                 Born in Stockholm in 2006, Byredo translates memory into scent
@@ -177,7 +178,7 @@
                 moments into timeless sensations.
               </p>
             </div>
-            <div class="bottom_txt">
+            <div class="bottom_txt txt">
               <p>
                 <span>A modern craft of emotion.</span> Designed without gender,
                 without excess <br />
@@ -359,6 +360,96 @@
           </div>
         </div>
       </div>
+
+      <div class="sec_7 con-min-width">
+        <div class="sec_7_br_mg">
+          <div class="mg_txt">
+            <h1>MOMENT</h1>
+            <img src="./BYREDO_img/7_line_1.png" alt="line이미지" />
+          </div>
+          <div class="mg_subtxt txt">
+            <p>
+              <span> — the essence of quiet emotion.</span><br />
+              From the touch of skin to the trace of scent, each moment becomes
+              memory. <br />Born in Stockholm, Byredo crafts fragrances that
+              transcend gender and time.<br />Minimal yet profound, every detail
+              whispers modern intimacy.
+            </p>
+            <p>
+              <span>A scent is never just a fragrance —</span> it is the story
+              you carry. <br />Byredo transforms invisible emotions into
+              delicate moments felt at your fingertips. Each subtle texture
+              lingers within the breath of <br />
+              everyday life, whispering fragments of memory and time. <br />
+              A trace of emotion that time cannot erase — this is Byredo.
+            </p>
+          </div>
+          <div class="grid img-box">
+            <img src="./BYREDO_img/6_img (2).png" alt="이미지1" /><img
+              src="./BYREDO_img/6_img (3).png"
+              alt="이미지2"
+            /><img src="./BYREDO_img/6_img (4).png" alt="이미지3" /><img
+              src="./BYREDO_img/6_img (1).png"
+              alt="이미지3"
+            />
+          </div>
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="sec_8 con">
+        <div class="sec_8_prd">
+          <div class="prd_txt">
+            <p class="p_design">BYREDO SIGNATURE PERFUME</p>
+          </div>
+          <div class="swiper sec8-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./BYREDO_img/Perfume_2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./BYREDO_img/Perfume_3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./BYREDO_img/Perfume_4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./BYREDO_img/Perfume_5.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./BYREDO_img/Perfume_6.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./BYREDO_img/Perfume_1.png" alt="" />
+              </div>
+            </div>
+
+            <!-- 버튼 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- 페이지네이션 점 -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
     </main>
+    <footer></footer>
+
+    <script>
+      var swiper = new Swiper(".sec8-swiper", {
+        loop: true,
+        slidesPerView: 5,
+        spaceBetween: 40,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>

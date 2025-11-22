@@ -705,7 +705,7 @@ a {
 
 /* 커스텀 */
 .con-min-width {
-  min-width: 1640px;
+  max-width: 1640px;
   width: 100%;
   margin: 0 auto;
 }
@@ -858,6 +858,36 @@ a {
 }
 
 /* 인트로 끝 */
+
+/* 바이레도 커스텀 */
+.p_design {
+  width: 265px;
+  padding: 15px 30px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+}
+
+.a_design {
+  padding: 12px 30px 12px;
+  background-color: #e7e5e1;
+  width: 185px;
+  display: block;
+  margin: 0 auto;
+}
+
+.txt > p {
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  display: inline-block;
+}
+
+.txt > p > span {
+  font-family: "Sansation", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* header시작 */
 
@@ -1033,8 +1063,8 @@ header .con .gnb ul > li > ul > li:hover > a {
   justify-content: center;
   gap: 120px;
   transition: 0.4s ease;
-  backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.13);
+  /* backdrop-filter: blur(12px); */
+  background: rgba(255, 255, 255, 0.1);
   margin-top: -40px;
 }
 
@@ -1054,6 +1084,10 @@ header .con .gnb ul > li > ul > li:hover > a {
 /* 메뉴바 끝 */
 
 /* main시작 */
+
+main {
+  width: 100%;
+}
 
 main .sec_1 {
   height: 1500px;
@@ -1168,18 +1202,11 @@ main .sec_3 .sec_3_top .brand_story_text {
   line-height: 34px;
 }
 
-main .sec_3 .sec_3_top .brand_story_text > div > p {
-  font-family: "Sansation", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  display: inline-block;
+main .sec_3 .sec_3_top .brand_story_text > .txt > p {
   font-size: 20px;
 }
 
-main .sec_3 .sec_3_top .brand_story_text > div > p > span {
-  font-family: "Sansation", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+main .sec_3 .sec_3_top .brand_story_text > .txt > p > span {
   font-size: 22px;
 }
 
@@ -1197,8 +1224,6 @@ main .sec_3 .sec_3_top .right_line {
 /* sec_3_bottom 시작 */
 
 main .sec_3 .sec_3_bottom {
-  width: 1760px;
-  margin: 0 auto;
   padding: 110px 0 180px;
 }
 
@@ -1209,6 +1234,7 @@ main .sec_3 .sec_3_bottom > ul {
   text-align: center;
   display: flex;
   justify-content: flex-end;
+  margin-right: -61px;
 }
 
 main .sec_3 .sec_3_bottom > ul > li {
@@ -1229,22 +1255,6 @@ main .sec_3 .sec_3_bottom > ul > li > .button_design {
   background-color: #e7e5e1;
 }
 
-/* 커스텀 */
-.p_design {
-  width: 265px;
-  padding: 15px 30px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  margin: 0 auto;
-}
-
-.a_design {
-  padding: 12px 30px 12px;
-  background-color: #e7e5e1;
-  width: 185px;
-  display: block;
-  margin: 0 auto;
-}
 /* main .sec_3 .sec_3_bottom > ul > li > .p_design {
   padding: 15px 30px;
   border-top: 1px solid black;
@@ -1362,7 +1372,7 @@ main .sec_5 div .grid_container .grid_item:hover .hoverimg {
 
 /* sec_5 끝 */
 
-/* sec_5 시작 */
+/* sec_6 시작 */
 main .sec_6 {
   text-align: center;
   width: 1640px;
@@ -1391,3 +1401,129 @@ main .sec_6 .sec_6_sub_prd_2 .left_txt_box > a {
 main .sec_6 .sec_6_sub_prd_2 .right_img_box > img {
   width: 1060px;
 }
+/* sec_6 끝 */
+
+/* sec_6 시작 */
+
+main .sec_7 {
+  padding: 200px 0 200px;
+}
+
+main .sec_7 .sec_7_br_mg {
+  position: relative;
+}
+
+main .sec_7 .sec_7_br_mg .mg_txt {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 85px;
+}
+
+/* main_txt */
+main .sec_7 .sec_7_br_mg .mg_txt > h1 {
+  font-family: "TestDomaineSansDisplay-medium";
+  font-size: 110px;
+  margin-left: 15px;
+}
+
+main .sec_7 .sec_7_br_mg .mg_txt > img {
+  display: block;
+  width: 584px;
+  margin-top: -48px;
+}
+
+/* sub_txt */
+main .sec_7 .sec_7_br_mg .mg_subtxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1378px;
+
+  margin-left: 115px;
+  line-height: 36px;
+}
+
+main .sec_7 .sec_7_br_mg .mg_subtxt > p {
+  font-size: 22px;
+}
+main .sec_7 .sec_7_br_mg .mg_subtxt > p > span {
+  font-size: 23px;
+}
+
+/* back image */
+main .sec_7 .sec_7_br_mg .grid {
+  position: absolute;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-auto-rows: auto;
+  width: fit-content;
+  gap: 16px;
+  top: 220px;
+  right: 0;
+  z-index: -1;
+}
+
+main .sec_7 .sec_7_br_mg .img-box > img:nth-child(1) {
+  width: 410px;
+}
+
+main .sec_7 .sec_7_br_mg .img-box > img:nth-child(2) {
+  width: 372px;
+  align-self: end;
+}
+
+main .sec_7 .sec_7_br_mg .img-box > img:nth-child(3) {
+  width: 343px;
+  justify-self: end;
+}
+
+main .sec_7 .sec_7_br_mg .img-box > img:nth-child(4) {
+  width: 433px;
+}
+
+main .sec_7 .sec_7_br_mg .circle {
+  z-index: -2;
+  position: absolute;
+  width: 605px;
+  height: 605px;
+  border-radius: 50%;
+  background-color: #fcf9f2;
+  bottom: 270px;
+  left: 450px;
+}
+
+/* sec_7 끝 */
+
+/* sec_8 시작 */
+
+main .sec_8 .sec_8_prd .sec8-swiper {
+  width: 1680px;
+  height: auto;
+  padding: 60px 0;
+  text-align: center;
+}
+
+main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  border: 1px solid red;
+  width: 261px;
+}
+
+.sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide .img_txt_wrap {
+}
+
+main
+  .sec_8
+  .sec_8_prd
+  .sec8-swiper
+  .swiper-wrapper
+  .swiper-slide
+  .img_txt_wrap
+  img {
+  width: 211px;
+  height: auto;
+  height: auto;
+  display: inline-block;
+}
+
+/* sec_8 끝 */
