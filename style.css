@@ -716,6 +716,11 @@ a {
   margin: 0 auto;
 }
 
+::selection {
+  background: #e2e2e2;
+  color: #111;
+}
+
 .sansation-light {
   font-family: "Sansation", sans-serif;
   font-weight: 300;
@@ -875,6 +880,49 @@ a {
   display: block;
   margin: 0 auto;
 }
+/* a버튼디자인2 */
+.button_design {
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #000;
+  background-color: #e7e5e1;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.button_design span {
+  position: relative;
+  z-index: 2;
+  color: #000;
+}
+
+.button_design:hover span {
+  color: #fff;
+}
+
+.button_design::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  background: black;
+  z-index: 1;
+  transform: translateX(-50%);
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.button_design:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+/* a버튼디자인2끝 */
 
 .txt > p {
   font-family: "Sansation", sans-serif;
@@ -1143,16 +1191,69 @@ main .sec_1 .main_content .main-image-area > img {
 }
 
 main .sec_1 .main_content > .button {
+  font-family: "Pretendard";
+  font-weight: 400;
   font-size: 16px;
   background-color: transparent;
   border-radius: 0;
   border: 1px solid #dbdbdb;
-  font-family: "Pretendard";
-  font-weight: 400;
   padding: 13px 76px;
   margin-top: 40px;
+  transition: 0.4s;
 }
 
+main .sec_1 .main_content > .button:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+main .sec_1 .main_content .text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation-delay: 0.1s;
+  z-index: 1;
+}
+
+/* Keyframes */
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+main .sec_1 .main_content .fade-in-tr {
+  -webkit-animation: fade-in-tr 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation-delay: 0.4s;
+  transition: 0.4s;
+}
+
+/**
+ * ----------------------------------------
+ * animation fade-in-tr
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-tr {
+  0% {
+    -webkit-transform: translateX(50px) translateY(-50px);
+    transform: translateX(50px) translateY(-50px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
 /* sec_1 끝 */
 
 /* sec_2 시작 */
@@ -1240,6 +1341,7 @@ main .sec_3 .sec_3_bottom > ul {
 main .sec_3 .sec_3_bottom > ul > li {
   margin-left: 40px;
   width: 323px;
+  position: relative;
 }
 
 main .sec_3 .sec_3_bottom > ul > li > img {
@@ -1251,16 +1353,15 @@ main .sec_3 .sec_3_bottom > ul > li > .p_design {
 }
 
 main .sec_3 .sec_3_bottom > ul > li > .button_design {
-  padding: 12px 30px 8px;
-  background-color: #e7e5e1;
+  padding: 12px 28px;
 }
 
-/* main .sec_3 .sec_3_bottom > ul > li > .p_design {
+main .sec_3 .sec_3_bottom > ul > li > .p_design {
   padding: 15px 30px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   margin: 50px 0;
-} */
+}
 
 /* sec_3_bottom 끝 */
 
@@ -1329,6 +1430,13 @@ main .sec_5 .sec_5_sub_prd > a {
   margin-top: 65px;
   background-color: #000000;
   color: #f4efe8;
+  transition: 0.4s;
+}
+
+main .sec_5 .sec_5_sub_prd > a:hover {
+  background: none;
+  border: 1px solid black;
+  color: #111;
 }
 
 main .sec_5 div .grid_container {
@@ -1387,6 +1495,8 @@ main .sec_6 .sec_6_sub_prd_2 {
 }
 
 main .sec_6 .sec_6_sub_prd_2 .left_txt_box {
+  font-family: "Pretendard";
+  font-weight: 400;
   margin-top: 500px;
 }
 
@@ -1396,6 +1506,7 @@ main .sec_6 .sec_6_sub_prd_2 .left_txt_box > p {
 
 main .sec_6 .sec_6_sub_prd_2 .left_txt_box > a {
   width: 130px;
+  padding: 12px 28px;
 }
 
 main .sec_6 .sec_6_sub_prd_2 .right_img_box > img {
@@ -1406,7 +1517,7 @@ main .sec_6 .sec_6_sub_prd_2 .right_img_box > img {
 /* sec_6 시작 */
 
 main .sec_7 {
-  padding: 200px 0 200px;
+  padding: 200px 0 250px;
 }
 
 main .sec_7 .sec_7_br_mg {
@@ -1495,35 +1606,294 @@ main .sec_7 .sec_7_br_mg .circle {
 /* sec_7 끝 */
 
 /* sec_8 시작 */
-
-main .sec_8 .sec_8_prd .sec8-swiper {
-  width: 1680px;
-  height: auto;
-  padding: 60px 0;
+main .sec_8 {
+  padding-bottom: 150px;
+}
+main .sec_8 .sec_8_prd {
+  width: 1770px;
   text-align: center;
+  margin-left: auto;
+  margin-right: 0;
+  padding-left: 20px;
+}
+main .sec_8 .sec_8_prd .prd_txt {
+  margin-bottom: 103px;
+}
+
+main .sec_8 .sec_8_prd .prd_txt > p {
+  margin-left: 0;
+  margin-right: auto;
+}
+main .sec_8 .sec_8_prd .sec8-swiper {
+  width: 1630px;
+  height: auto;
+  padding: 60px 0 80px;
+  margin-left: auto;
+  margin-right: 0;
+  border-bottom: 1px solid black;
+  /* position: relative;
+  overflow: visible; */
 }
 
 main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide {
   display: flex;
-  border: 1px solid red;
-  width: 261px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 410px;
 }
 
-.sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide .img_txt_wrap {
+main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 234px;
 }
 
-main
-  .sec_8
-  .sec_8_prd
-  .sec8-swiper
-  .swiper-wrapper
-  .swiper-slide
-  .img_txt_wrap
-  img {
-  width: 211px;
-  height: auto;
-  height: auto;
-  display: inline-block;
+main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > span {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-size: 24px;
+  color: #424242;
+  margin-top: 20px;
 }
+
+main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > p {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 20px;
+  color: #5c5c5c;
+}
+
+main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > p > span {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 18px;
+  color: #878787;
+}
+
+/* main .sec_8 .sec_8_prd .sec8-swiper .swiper-button-prev::after {
+  content: "";
+}
+
+main .sec_8 .sec_8_prd .sec8-swiper .swiper-button-prev {
+  width: 10px;
+  height: 80px;
+  background: #e9e7e7;
+  transition: 0.3s ease;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+main .sec_8 .sec_8_prd .sec8-swiper .swiper-button-prev:hover {
+  opacity: 1;
+  background: #bbbbbb;
+}
+
+main .sec_8 .sec_8_prd .sec8-swiper .swiper-button-prev {
+  left: -50px;
+  z-index: 10 !important;
+} */
 
 /* sec_8 끝 */
+
+/* main끝 */
+
+/* footer시작 */
+footer {
+  background-color: #fdfcf8;
+  position: relative;
+  height: 731px;
+}
+
+footer .wrap {
+  padding-top: 94px;
+}
+
+/* 푸터로고 */
+footer .wrap .logo {
+  margin-bottom: 110px;
+}
+
+footer .wrap .logo > img {
+  width: 338px;
+}
+
+/* 푸터 텍스트 */
+footer .txt_box {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+footer .txt_box div ul li p {
+  font-family: "Pretendard";
+  font-weight: 700;
+  color: #606060;
+}
+
+footer .txt_box div ul li {
+  font-family: "Pretendard";
+  font-weight: 400;
+  color: #8c8c8c;
+  margin-bottom: 25px;
+}
+
+footer .txt_box div ul li:hover a {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+footer .txt_box .txt01 {
+  flex-basis: 25%;
+}
+
+footer .txt_box .txt02 {
+  flex-basis: 40%;
+}
+
+footer .txt_box .txt02 .txt02_top {
+  margin-bottom: 78px;
+}
+
+footer .txt_box .txt03 {
+  flex-basis: 40%;
+}
+
+footer .txt_box .txt03 ul li form > button > img {
+  width: 92px;
+}
+
+/* 이메일 입력창 */
+
+.email-form {
+  width: 500px;
+  border-bottom: 1px solid black;
+  padding-bottom: 4px;
+  margin: 67px 0 67px;
+}
+.email-form input[type="email"] {
+  padding: 10px 14px;
+  font-size: 24px;
+  color: #000000;
+  border: none;
+  background: transparent;
+  outline: none;
+  /* background: #f5f4f0; */
+}
+
+input::placeholder {
+  color: #b6b5b4;
+  font-size: 18px;
+}
+
+.checkbox-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.email-form button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.email-form button:hover {
+  opacity: 0.8;
+}
+
+.checkbox-wrap label {
+  font-size: 18px;
+}
+
+/* 푸터하단이미지 */
+footer .bottom_line {
+  width: 744px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* footer 끝 */
+
+/* 반응형 */
+/* Mobile (768px 이하) */
+@media (max-width: 768px) {
+  /* Header */
+  header .con div .gnb {
+    display: none;
+  }
+  header .ico {
+    display: flex !important;
+  }
+
+  /* main */
+  main .sec_1 {
+    height: auto;
+    padding: 160px 0 120px;
+  }
+  main .sec_1 .main_content {
+    width: 100%;
+    padding-top: 0;
+  }
+  main .sec_1 .main_txt {
+    font-size: 48px;
+    line-height: 54px;
+    position: static;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  main .sec_1 .main-image-area {
+    margin-left: 0;
+  }
+  main .sec_1 img {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  /* sec_3 */
+  main .sec_3 .sec_3_top {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .sec_3 .brand_txt_leftline,
+  main .sec_3 .right_line {
+    display: none;
+  }
+  main .sec_3 .brand_story_text {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  /* Grid 3 → 2 */
+  main .sec_5 .grid_container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* sec_6 */
+  main .sec_6 .sec_6_sub_prd_2 {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+  main .sec_6 img {
+    width: 100%;
+  }
+}
+
+/* Small Mobile (375px 이하) */
+@media (max-width: 375px) {
+  main .sec_1 .main_txt {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  main .sec_5 .grid_container {
+    grid-template-columns: 1fr !important;
+  }
+
+  footer .txt_box {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
