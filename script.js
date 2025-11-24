@@ -1,12 +1,12 @@
-  document.addEventListener("scroll", function () {
-    const header = document.querySelector(".header");
+document.addEventListener("scroll", function () {
+  const header = document.querySelector(".header");
 
-    if (window.scrollY > 80) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  });
+  if (window.scrollY > 80) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
 
 
 //   var swiper = new Swiper('.sec8-swiper', {
@@ -35,3 +35,19 @@
 //     clickable: true,
 //   }
 // });
+
+
+var swiper = new Swiper(".sec8-swiper", {
+  slidesPerView: 5,
+  spaceBetween: 40,
+  navigation: {
+    // nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true,
+  },
+});
+
+AOS.init();

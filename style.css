@@ -1630,9 +1630,12 @@ main .sec_8 .sec_8_prd .sec8-swiper {
   padding: 60px 0 80px;
   margin-left: auto;
   margin-right: 0;
-  border-bottom: 1px solid black;
   /* position: relative;
   overflow: visible; */
+}
+
+main .sec_8 .sec_8_prd .sec8-swiper .swiper-scrollbar {
+  opacity: 1;
 }
 
 main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide {
@@ -1825,59 +1828,6 @@ footer .bottom_line {
   }
   header .ico {
     display: flex !important;
-  }
-
-  /* main */
-  main .sec_1 {
-    height: auto;
-    padding: 160px 0 120px;
-  }
-  main .sec_1 .main_content {
-    width: 100%;
-    padding-top: 0;
-  }
-  main .sec_1 .main_txt {
-    font-size: 48px;
-    line-height: 54px;
-    position: static;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-  main .sec_1 .main-image-area {
-    margin-left: 0;
-  }
-  main .sec_1 img {
-    width: 85%;
-    margin: 0 auto;
-  }
-
-  /* sec_3 */
-  main .sec_3 .sec_3_top {
-    flex-direction: column;
-    align-items: center;
-  }
-  main .sec_3 .brand_txt_leftline,
-  main .sec_3 .right_line {
-    display: none;
-  }
-  main .sec_3 .brand_story_text {
-    width: 100%;
-    padding: 20px 0;
-  }
-
-  /* Grid 3 → 2 */
-  main .sec_5 .grid_container {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-
-  /* sec_6 */
-  main .sec_6 .sec_6_sub_prd_2 {
-    flex-direction: column;
-    padding: 0;
-    text-align: center;
-  }
-  main .sec_6 img {
-    width: 100%;
   }
 }
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Byredo</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="/script.js" defer></script>
 
     <!-- 구글 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,7 +18,7 @@
       href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
       rel="stylesheet"
     />
-    <script src="/script.js"></script>
+
     <!-- 제이쿼리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- lodash -->
@@ -32,6 +33,10 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
     <!-- ScrollTrigger -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <!-- 인트로 -->
@@ -133,7 +138,11 @@
           <div class="main-image-area img-box fade-in-tr">
             <img src="./BYREDO_img/main_img_2.png" alt="상품이미지" />
           </div>
-          <p class="main-description">
+          <p
+            class="main-description"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             Sealed within glass, each scent rests in silent harmony. Minimal yet
             <br />
             profound, a still presence that echoes beyond time.
@@ -374,10 +383,23 @@
             </p>
           </div>
           <div class="grid img-box">
-            <img src="./BYREDO_img/6_img (2).png" alt="이미지1" /><img
+            <img
+              data-aos="fade-up"
+              src="./BYREDO_img/6_img (2).png"
+              alt="이미지1"
+            />
+            <img
+              data-aos="fade-down"
               src="./BYREDO_img/6_img (3).png"
               alt="이미지2"
-            /><img src="./BYREDO_img/6_img (4).png" alt="이미지3" /><img
+            />
+            <img
+              data-aos="fade-right"
+              src="./BYREDO_img/6_img (4).png"
+              alt="이미지3"
+            />
+            <img
+              data-aos="fade-left"
               src="./BYREDO_img/6_img (1).png"
               alt="이미지3"
             />
@@ -424,13 +446,11 @@
                 <p>발 다프리크 오 드 퍼퓸&nbsp;<span>100ml</span></p>
               </div>
             </div>
+            <div class="swiper-scrollbar"></div>
 
             <!-- 버튼 -->
             <!-- <div class="swiper-button-prev"></div> -->
             <!-- <div class="swiper-button-next"></div> -->
-
-            <!-- 페이지네이션 점 -->
-            <!-- <div class="swiper-pagination"></div> -->
           </div>
         </div>
       </div>
@@ -501,21 +521,5 @@
         <img src="./BYREDO_img/bottom_line.png" alt="하단라인" />
       </div>
     </footer>
-
-    <script>
-      var swiper = new Swiper(".sec8-swiper", {
-        loop: true,
-        slidesPerView: 5,
-        spaceBetween: 40,
-        navigation: {
-          // nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
   </body>
 </html>
