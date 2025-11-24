@@ -985,8 +985,8 @@ header .con .logo img {
 
 .header .con .ico {
   position: absolute;
-  top: 20px;
-  right: 0;
+  top: 30px;
+  right: 30px;
   display: none;
 }
 
@@ -1179,7 +1179,7 @@ main .sec_1 .main_content .main-description {
   font-weight: 300;
   font-style: normal;
   font-size: 21px;
-  margin-top: -7x;
+  margin-top: -7px;
 }
 
 main .sec_1 .main_content .main-image-area {
@@ -1259,7 +1259,6 @@ main .sec_1 .main_content .fade-in-tr {
 /* sec_2 시작 */
 
 main .sec_2 .img-box > img {
-  height: 376px;
 }
 
 /* sec_2 끝 */
@@ -1344,12 +1343,14 @@ main .sec_3 .sec_3_bottom > ul > li {
   position: relative;
 }
 
-main .sec_3 .sec_3_bottom > ul > li > img {
+main .sec_3 .sec_3_bottom > ul > li > a > img {
   height: 432px;
+  transition: 0.3s;
 }
 
-main .sec_3 .sec_3_bottom > ul > li > .p_design {
-  margin: 50px 0;
+main .sec_3 .sec_3_bottom > ul > li > a:hover > img {
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 main .sec_3 .sec_3_bottom > ul > li > .button_design {
@@ -1454,6 +1455,7 @@ main .sec_5 div .grid_container .grid_item {
   position: relative;
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .default,
@@ -1466,7 +1468,7 @@ main .sec_5 div .grid_container .hoverimg {
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: opacity 0.6s ease;
+  transition: opacity 0.3s ease;
   pointer-events: none;
 }
 
@@ -1476,6 +1478,7 @@ main .sec_5 div .grid_container .grid_item:hover .default {
 
 main .sec_5 div .grid_container .grid_item:hover .hoverimg {
   opacity: 1;
+  transition: opacity 0.8s ease;
 }
 
 /* sec_5 끝 */
@@ -1483,7 +1486,6 @@ main .sec_5 div .grid_container .grid_item:hover .hoverimg {
 /* sec_6 시작 */
 main .sec_6 {
   text-align: center;
-  width: 1640px;
 }
 
 main .sec_6 .sec_6_sub_prd_2 {
@@ -1514,7 +1516,7 @@ main .sec_6 .sec_6_sub_prd_2 .right_img_box > img {
 }
 /* sec_6 끝 */
 
-/* sec_6 시작 */
+/* sec_7 시작 */
 
 main .sec_7 {
   padding: 200px 0 250px;
@@ -1549,7 +1551,6 @@ main .sec_7 .sec_7_br_mg .mg_subtxt {
   flex-direction: column;
   justify-content: space-between;
   height: 1378px;
-
   margin-left: 115px;
   line-height: 36px;
 }
@@ -1644,14 +1645,15 @@ main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide {
   align-items: center;
   justify-content: space-between;
   height: 410px;
+  margin-bottom: 50px;
 }
 
-main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide img {
+main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide a img {
   display: block;
   width: 234px;
 }
 
-main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > span {
+main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > a > span {
   font-family: "Pretendard";
   font-weight: 700;
   font-size: 24px;
@@ -1659,14 +1661,22 @@ main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > span {
   margin-top: 20px;
 }
 
-main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > p {
+main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > a > p {
   font-family: "Pretendard";
   font-weight: 500;
   font-size: 20px;
   color: #5c5c5c;
 }
 
-main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > p > span {
+main
+  .sec_8
+  .sec_8_prd
+  .sec8-swiper
+  .swiper-wrapper
+  .swiper-slide
+  > a
+  > p
+  > span {
   font-family: "Pretendard";
   font-weight: 400;
   font-size: 18px;
@@ -1822,12 +1832,262 @@ footer .bottom_line {
 /* 반응형 */
 /* Mobile (768px 이하) */
 @media (max-width: 768px) {
+  header > img {
+    width: 300px;
+    height: auto;
+  }
   /* Header */
   header .con div .gnb {
     display: none;
   }
+
+  header .con .logo {
+    margin-left: 40px;
+  }
   header .ico {
     display: flex !important;
+  }
+
+  /* main */
+  /* sec_1 */
+  main .sec_1 {
+    height: 1300px;
+  }
+
+  main .sec_1 .main_content {
+    padding-top: 350px;
+  }
+  main .sec_1 .main_content .main_txt {
+    top: 210px;
+    font-size: 80px;
+    line-height: 90px;
+  }
+  main .sec_1 .main_content .main-image-area {
+    margin-left: 230px;
+  }
+
+  main .sec_1 .main_content .main_side_txt > p {
+    top: 45%;
+    font-size: 25px;
+    left: 140px;
+  }
+
+  main .sec_1 .main_content .main-image-area > img {
+    width: 400px;
+  }
+
+  main .sec_1 .main_content .main-description {
+    margin-top: 40px;
+  }
+
+  /* sec_3*/
+  main .sec_3 .sec_3_top .brand_txt_leftline {
+    padding-left: 50px;
+  }
+
+  main .sec_3 .sec_3_top .brand_txt_leftline > span {
+    font-size: 55px;
+    left: -79px;
+    top: 130px;
+  }
+
+  main .sec_3 .sec_3_top .brand_txt_leftline > img {
+    height: 320px;
+  }
+
+  main .sec_3 .sec_3_top .right_line > img {
+    height: 174px;
+  }
+
+  main .sec_3 .sec_3_top .brand_story_text {
+    line-height: 24px;
+    padding: 60px 20px;
+    width: 510px;
+  }
+
+  main .sec_3 .sec_3_top .brand_story_text > .txt > p {
+    font-size: 13px;
+  }
+
+  main .sec_3 .sec_3_top .brand_story_text > .txt > p > span {
+    font-size: 15px;
+  }
+
+  main .sec_3 .sec_3_bottom > ul {
+    font-size: 12px;
+    margin-right: 20px;
+  }
+
+  main .sec_3 .sec_3_bottom > ul > li {
+    width: 140px;
+    margin-left: 18px;
+  }
+
+  main .sec_3 .sec_3_bottom > ul > li > a > img {
+    height: 198px;
+    transition: 0.3s;
+  }
+
+  main .sec_3 .sec_3_bottom > ul > li > .button_design {
+    padding: 12px 22px;
+  }
+
+  main .sec_3 .sec_3_bottom > ul > li > .p_design {
+    padding: 15px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 20px 0;
+    width: auto;
+  }
+
+  /* sec_4 */
+
+  main .sec_4 .sec_4_banner .sec_4_ani_txt > p {
+    font-size: 81px;
+  }
+
+  /* sec_5 시작 */
+
+  main .sec_5 div .grid_container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  main .sec_5 div .grid_container .grid_item:nth-child(n + 5) {
+    display: none;
+  }
+
+  main .sec_5 .sec_5_sub_prd > a {
+    margin-top: 100px;
+  }
+
+  /* sec_6 시작 */
+  main .sec_6 {
+    padding-top: 100px;
+  }
+
+  main .sec_6 .sec_6_sub_prd_2 {
+    padding: 0 100px 0 0;
+    position: relative;
+  }
+  main .sec_6 .sec_6_sub_prd_2 .right_img_box > img {
+    width: 450px;
+    margin-top: 50px;
+  }
+
+  main .sec_6 .sec_6_sub_prd_2 .left_txt_box > p {
+    position: absolute;
+    font-size: 15px;
+    width: 180px;
+    top: 0;
+    left: 70px;
+  }
+
+  main .sec_6 .sec_6_sub_prd_2 .left_txt_box > a {
+    position: absolute;
+    bottom: 28px;
+    right: 230px;
+  }
+
+  /* sec_7 시작 */
+
+  main .sec_7 .sec_7_br_mg .mg_subtxt {
+    height: 800px;
+    margin-left: 60px;
+  }
+
+  main .sec_7 .sec_7_br_mg .mg_txt {
+    margin-left: 50px;
+  }
+  main .sec_7 .sec_7_br_mg .mg_txt > h1 {
+    font-size: 67px;
+  }
+  main .sec_7 .sec_7_br_mg .mg_txt > img {
+    width: 350px;
+    margin-top: -29px;
+  }
+  main .sec_7 .sec_7_br_mg .mg_subtxt {
+    line-height: 24px;
+  }
+  main .sec_7 .sec_7_br_mg .mg_subtxt > p {
+    font-size: 13px;
+  }
+  main .sec_7 .sec_7_br_mg .mg_subtxt > p > span {
+    font-size: 15px;
+  }
+  main .sec_7 .sec_7_br_mg .grid {
+    gap: 10px;
+    right: 60px;
+  }
+
+  main .sec_7 .sec_7_br_mg .img-box > img:nth-child(1) {
+    width: 172px;
+  }
+
+  main .sec_7 .sec_7_br_mg .img-box > img:nth-child(2) {
+    width: 155px;
+    align-self: end;
+  }
+
+  main .sec_7 .sec_7_br_mg .img-box > img:nth-child(3) {
+    width: 142px;
+    justify-self: end;
+  }
+
+  main .sec_7 .sec_7_br_mg .img-box > img:nth-child(4) {
+    width: 185px;
+  }
+
+  main .sec_7 .sec_7_br_mg .circle {
+    width: 300px;
+    height: 300px;
+    bottom: 220px;
+    left: 200px;
+  }
+
+  /* sec_8 시작 */
+
+  main .sec_8 .sec_8_prd {
+    width: 600px;
+    padding-left: 0;
+    margin-left: 50px;
+  }
+
+  main .sec_8 .sec_8_prd .prd_txt > p {
+    width: 220px;
+    font-size: 15px;
+    padding: 10px 5px;
+  }
+  main .sec_8 .sec_8_prd .sec8-swiper {
+    width: 550px;
+    margin-left: 90px;
+    padding: 0;
+  }
+
+  main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide {
+    height: 200px;
+  }
+
+  main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide a img {
+    width: 106px;
+  }
+  main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > a > span {
+    font-size: 13px;
+  }
+
+  main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > a > p {
+    font-size: 14px;
+  }
+  main
+    .sec_8
+    .sec_8_prd
+    .sec8-swiper
+    .swiper-wrapper
+    .swiper-slide
+    > a
+    > p
+    > span {
+    font-size: 12px;
   }
 }
 

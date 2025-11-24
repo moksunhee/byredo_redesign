@@ -9,45 +9,45 @@ document.addEventListener("scroll", function () {
 });
 
 
-//   var swiper = new Swiper('.sec8-swiper', {
-//   loop: true,
-//   spaceBetween: 40,
-//   breakpoints: {
-//     1920: {
-//       slidesPerView: 6,
-//     },
-//     768: {
-//       slidesPerView: 3,
-//     },
-//     480: {
-//       slidesPerView: 2,
-//     },
-//     0: {
-//       slidesPerView: 1,
-//     },
-//   },
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   }
-// });
-
-
-var swiper = new Swiper(".sec8-swiper", {
-  slidesPerView: 5,
+  var swiper = new Swiper('.sec8-swiper', {
+  // loop: true,
   spaceBetween: 40,
+  breakpoints: {
+    1920: {
+      slidesPerView: 5,
+    },
+    767: {
+      slidesPerView: 4,
+    },
+   376: {
+      slidesPerView: 4,
+    },
+    0: {
+      slidesPerView: 1,
+    },
+  },
   navigation: {
-    // nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    hide: true,
-  },
+  pagination: {
+    el: '.swiper-pagination',
+    // clickable: true,
+  }
 });
+
+
+// var swiper = new Swiper(".sec8-swiper", {
+//   slidesPerView: 5,
+//   spaceBetween: 40,
+//   navigation: {
+//     // nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   scrollbar: {
+//     el: ".swiper-scrollbar",
+//     // hide: true,
+//   },
+// });
 
 AOS.init();
