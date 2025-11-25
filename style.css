@@ -1639,7 +1639,7 @@ main .sec_8 .sec_8_prd .sec8-swiper .swiper-scrollbar {
   opacity: 1;
 }
 
-main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper{
+main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper {
 }
 
 main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide {
@@ -1649,9 +1649,7 @@ main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide {
   justify-content: space-between;
   height: 410px;
   margin-bottom: 50px;
-
 }
-
 
 main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide a img {
   display: block;
@@ -1663,7 +1661,7 @@ main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > a > span {
   font-weight: 700;
   font-size: 24px;
   color: #424242;
-  margin-top: 20px ;
+  margin-top: 20px;
 }
 
 main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > a > p {
@@ -1996,8 +1994,12 @@ footer .bottom_line {
 
   /* sec_7 시작 */
 
+  main .sec_7 {
+    padding: 160px 0;
+  }
+
   main .sec_7 .sec_7_br_mg .mg_subtxt {
-    height: 800px;
+    height: 700px;
     margin-left: 60px;
   }
 
@@ -2017,6 +2019,11 @@ footer .bottom_line {
   main .sec_7 .sec_7_br_mg .mg_subtxt > p {
     font-size: 13px;
   }
+  main .sec_7 .sec_7_br_mg .mg_subtxt > p:last-child {
+    max-width: 540px;
+    margin-left: 50px;
+  }
+
   main .sec_7 .sec_7_br_mg .mg_subtxt > p > span {
     font-size: 15px;
   }
@@ -2053,9 +2060,9 @@ footer .bottom_line {
   /* sec_8 시작 */
 
   main .sec_8 .sec_8_prd {
-    width: 600px;
-    padding-left: 0;
+    width: 650px;
     margin-left: 50px;
+    padding: 0;
   }
 
   main .sec_8 .sec_8_prd .prd_txt > p {
@@ -2064,9 +2071,9 @@ footer .bottom_line {
     padding: 10px 5px;
   }
   main .sec_8 .sec_8_prd .sec8-swiper {
-    width: 550px;
-    margin-left: 90px;
+    width: 100%;
     padding: 0;
+    margin: 0;
   }
 
   main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide {
@@ -2095,47 +2102,84 @@ footer .bottom_line {
     font-size: 12px;
   }
 
-  main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > a > p{
-      width: 150px;
+  main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > a > p {
+    width: 150px;
   }
 
-footer .wrap .logo > img {
-  width: 135px;
-}
-footer .txt_box {
-  font-size: 14px;
-}
+  footer {
+    height: 485px;
+  }
 
-footer .bottom_line{
-  width: 500px;
+  footer .wrap {
+    padding-left: 52px;
+  }
+
+  footer .wrap .logo {
+    margin-bottom: 60px;
+  }
+
+  footer .wrap .logo {
+    width: 135px;
+  }
+
+  footer .wrap .logo > img {
+    width: 100%;
+    display: block;
+  }
+
+  footer .txt_box {
+    font-size: 14px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+  }
+
+  footer .bottom_line {
+    width: 500px;
     height: auto;
-}
-footer .txt_box .txt01 {
- width: 200px;
-}
+  }
 
-footer .txt_box .txt02 {
-  flex-basis: 30%;
+  footer .txt_box .txt03 ul li:first-child {
+    margin-bottom: 12px;
+  }
+  footer .txt_box .txt01 {
+    width: 200px;
+  }
+
+  footer .txt_box .txt02 {
+    flex-basis: 30%;
+  }
+
+  footer .txt_box .txt02 .txt02_top {
+    margin-bottom: 48px;
+  }
+
+  footer .txt_box .txt03 {
+    flex-basis: 10%;
+  }
+
+  .email-form {
+    width: 260px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .email-form input[type="email"] {
+    width: 160px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .checkbox-wrap label {
+    font-size: 12px;
+  }
+
+  .email-form button {
+    padding: 0;
+  }
+
+  footer .txt_box .txt03 ul li form > button > img {
+    width: 40px;
+  }
 }
-
-footer .txt_box .txt02 .txt02_top {
-  margin-bottom: 48px;
-}
-
-footer .txt_box .txt03 {
-  flex-basis: 10%;
-}
-
-
-.email-form button img{
- max-width: 50%;
-  height: auto;
-}
-
-.email-form input[type="email"] {
-width: 250px;}
-}
-
 
 /* Small Mobile (375px 이하) */
 @media (max-width: 375px) {

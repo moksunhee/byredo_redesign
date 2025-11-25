@@ -8,8 +8,7 @@ document.addEventListener("scroll", function () {
   }
 });
 
-
-  var swiper = new Swiper('.sec8-swiper', {
+var swiper = new Swiper(".sec8-swiper", {
   // loop: true,
   spaceBetween: 40,
   breakpoints: {
@@ -19,35 +18,16 @@ document.addEventListener("scroll", function () {
     768: {
       slidesPerView: 5,
     },
-   375: {
+    375: {
       slidesPerView: 4,
     },
     0: {
       slidesPerView: 2,
     },
   },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+  scrollbar: {
+    el: ".swiper-scrollbar",
   },
-  pagination: {
-    el: '.swiper-pagination',
-    // clickable: true,
-  }
 });
-
-
-// var swiper = new Swiper(".sec8-swiper", {
-//   slidesPerView: 5,
-//   spaceBetween: 40,
-//   navigation: {
-//     // nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   scrollbar: {
-//     el: ".swiper-scrollbar",
-//     // hide: true,
-//   },
-// });
 
 AOS.init();
