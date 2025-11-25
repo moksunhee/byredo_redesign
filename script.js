@@ -16,14 +16,14 @@ document.addEventListener("scroll", function () {
     1920: {
       slidesPerView: 5,
     },
-    767: {
-      slidesPerView: 4,
+    768: {
+      slidesPerView: 5,
     },
-   376: {
+   375: {
       slidesPerView: 4,
     },
     0: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
   },
   navigation: {

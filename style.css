@@ -1639,6 +1639,9 @@ main .sec_8 .sec_8_prd .sec8-swiper .swiper-scrollbar {
   opacity: 1;
 }
 
+main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper{
+}
+
 main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide {
   display: flex;
   flex-direction: column;
@@ -1646,7 +1649,9 @@ main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide {
   justify-content: space-between;
   height: 410px;
   margin-bottom: 50px;
+
 }
+
 
 main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide a img {
   display: block;
@@ -1658,7 +1663,7 @@ main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > a > span {
   font-weight: 700;
   font-size: 24px;
   color: #424242;
-  margin-top: 20px;
+  margin-top: 20px ;
 }
 
 main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > a > p {
@@ -2072,11 +2077,11 @@ footer .bottom_line {
     width: 106px;
   }
   main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > a > span {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > a > p {
-    font-size: 14px;
+    font-size: 10px;
   }
   main
     .sec_8
@@ -2089,7 +2094,48 @@ footer .bottom_line {
     > span {
     font-size: 12px;
   }
+
+  main .sec_8 .sec_8_prd .sec8-swiper .swiper-wrapper .swiper-slide > a > p{
+      width: 150px;
+  }
+
+footer .wrap .logo > img {
+  width: 135px;
 }
+footer .txt_box {
+  font-size: 14px;
+}
+
+footer .bottom_line{
+  width: 500px;
+    height: auto;
+}
+footer .txt_box .txt01 {
+ width: 200px;
+}
+
+footer .txt_box .txt02 {
+  flex-basis: 30%;
+}
+
+footer .txt_box .txt02 .txt02_top {
+  margin-bottom: 48px;
+}
+
+footer .txt_box .txt03 {
+  flex-basis: 10%;
+}
+
+
+.email-form button img{
+ max-width: 50%;
+  height: auto;
+}
+
+.email-form input[type="email"] {
+width: 250px;}
+}
+
 
 /* Small Mobile (375px 이하) */
 @media (max-width: 375px) {
