@@ -1131,6 +1131,60 @@ header .con .gnb ul > li > ul > li:hover > a {
 
 /* 메뉴바 끝 */
 
+/* ham메뉴시작 */
+
+.header .hammenu {
+  width: 360px;
+  height: 812px;
+background-color: rgb(232, 228, 235);
+  opacity: 0.9;
+}
+
+
+
+.header .hammenu .menu_box{
+    padding: 70px 0 0 30px;
+}
+.header .hammenu .menu_box .txt_top{
+  display: flex;
+  justify-content: space-between;
+}
+.header .hammenu .menu_box .txt_top .close_buttom {
+  padding-right: 20px;
+  margin-top: -9px;
+}
+
+.header .hammenu .menu_box .txt_top .close_buttom a img{
+  width: 40px;
+}
+
+.header .hammenu .menu_box .txt_top .logo img{
+  display: block;
+  width: 100px;
+  height: auto;
+}
+
+
+.header .hammenu .menu_box div ul li a {
+  display: inline-block;
+  padding: 10px 0;
+  border: 1px solid red;
+}
+
+
+.header .hammenu .menu_box div ul ul {
+  display: none;
+}
+
+
+.header .hammenu .menu_box div ul li:hover ul {
+  display: block;
+
+}
+
+
+
+
 /* main시작 */
 
 main {
@@ -1174,8 +1228,8 @@ main .sec_1 .main_content .main_side_txt > p {
   top: 45%;
 }
 
-main .sec_1 .main_content .main-description > br:nth-child(1){
-display: none;
+main .sec_1 .main_content .main-description > br:nth-child(1) {
+  display: none;
 }
 
 main .sec_1 .main_content .main-description {
@@ -1265,7 +1319,6 @@ main .sec_2 .img-box {
   overflow: hidden;
 }
 
-
 main .sec_2 .img-box > img {
 }
 
@@ -1323,7 +1376,7 @@ main .sec_3 .sec_3_top .brand_story_text .bottom_txt {
   margin-top: 138px;
 }
 
-main .sec_3 .sec_3_top .brand_story_text .bottom_txt > p > br:nth-child(2){
+main .sec_3 .sec_3_top .brand_story_text .bottom_txt > p > br:nth-child(2) {
   display: none;
 }
 
@@ -1337,6 +1390,23 @@ main .sec_3 .sec_3_top .right_line {
 
 main .sec_3 .sec_3_bottom {
   padding: 110px 0 180px;
+}
+main .sec_3 .sec_3_bottom .plus {
+  font-size: 13px;
+  color: #797878;
+    text-align: end;
+    padding-right: 30px;
+    margin-bottom: 30px;
+display: none;
+}
+
+main .sec_3 .sec_3_bottom .plus  a{
+/* 
+    border: 1px solid red; */
+}
+
+main .sec_3 .sec_3_bottom .plus  a  p {
+
 }
 
 main .sec_3 .sec_3_bottom > ul {
@@ -1452,9 +1522,9 @@ main .sec_5 .sec_5_sub_prd > a:hover {
   color: #111;
 }
 
-  .swiper-wrapper {
-    display: contents;
-  }
+.swiper-wrapper {
+  display: contents;
+}
 
 main .sec_5 div .grid_container {
   display: inline-grid;
@@ -1641,8 +1711,6 @@ main .sec_8 .sec_8_prd .prd_txt > p {
   margin-left: 0;
   margin-right: auto;
 }
-
-
 
 main .sec_8 .sec_8_prd .sec8-swiper {
   width: 1630px;
@@ -2202,80 +2270,89 @@ footer .bottom_line {
 
 /* Small Mobile (375px 이하) */
 @media (max-width: 375px) {
-
-
-header .con .logo img{
-  width: 120px;
-  height: auto;
-  padding: 70px 40px 0px 0px;
-}
-
-
-main .sec_1 {
-  height: 930px;}
-
-  main .sec_1 .main_content{
-    padding-top: 260px;
-    
+  body {
+    overflow-x: hidden;
   }
-main .sec_1 .main_content .main-image-area{
-  overflow: hidden;
-  width: 250px;
-  margin-left: 100px;
+
+  header .con .logo img {
+    width: 120px;
+    height: auto;
+    padding: 70px 40px 0px 0px;
+  }
+
+.header .con .ico{
+   top: 30px;
+    right: 10px;
 }
+  
+  main .sec_1 {
+    height: 930px;
+  }
 
-main .sec_1 .main_content .main-image-area > img {
+  main .sec_1 .main_content {
+    padding-top: 260px;
+  }
+  main .sec_1 .main_content .main-image-area {
+    overflow: hidden;
+    width: 260px;
+    margin-left: 100px;
+  }
 
-  width: 200px;
-}
+  main .sec_1 .main_content .main-image-area > img {
+    width: 350px;
+  }
 
-  main .sec_1 .main_content .main_side_txt > p{
+  main .sec_1 .main_content .main_side_txt > p {
     display: none;
   }
 
   main .sec_1 .main_content .main_txt {
     font-size: 58px;
     line-height: 65px;
-    margin-left: 20px;
+    margin-left: -10px;
     top: 180px;
   }
 
-main .sec_1 .main_content .main-description{
-   font-size: 12px;
-   margin-left: 25px;
-  margin-top: 0;
-}
+  main .sec_3 .sec_3_bottom > ul{
+    justify-content:flex-start;
+    margin-left: 9px;
+  }
 
-main .sec_1 .main_content .main-description > br:nth-child(1){
-display: block;
-}
+  main .sec_1 .main_content .main-description {
+    font-size: 12px;
+    margin-left: 0;
+    margin-top: 0;
+  }
 
-main .sec_1 .main_content .main-description > br:nth-child(2){
-display: none;
-}
+  main .sec_1 .main_content .main-description > br:nth-child(1) {
+    display: block;
+  }
 
+  main .sec_1 .main_content .main-description > br:nth-child(2) {
+    display: none;
+  }
 
-/* sec_2 시작 */
-main .sec_2 .img-box{
-width: 350px;
-height: 200px;
-overflow: hidden;
-}
-main .sec_2 .img-box > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: calc(32% + 20px) center;}
-
+  /* sec_2 시작 */
+  main .sec_2 .img-box {
+    width: 365px;
+    height: 200px;
+    overflow: hidden;
+  }
+  main .sec_2 .img-box > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: calc(32% + 20px) center;
+  }
 
   /* sec_3 시작 */
 
   main .sec_3 .sec_3_top .brand_txt_leftline {
-      padding-left: 60px;
+    padding-left: 60px;
   }
 
   main .sec_3 .sec_3_top .brand_txt_leftline > span {
-left: -70px;
+    left: -70px;
   }
 
   main .sec_3 .sec_3_top .brand_story_text {
@@ -2285,92 +2362,97 @@ left: -70px;
   }
   main .sec_3 .sec_3_top .right_line > img {
     height: 174px;
-    margin-right: 25px; 
+    margin-right: 25px;
   }
 
-    main .sec_3 .sec_3_top .brand_story_text > .txt > p {
+  main .sec_3 .sec_3_top .brand_story_text > .txt > p {
     font-size: 12px;
   }
 
   main .sec_3 .sec_3_top .brand_story_text > .txt > p > span {
     font-size: 14px;
   }
-main .sec_3 .sec_3_top .brand_story_text .bottom_txt{
-  margin-top: 80px;
-}
+  main .sec_3 .sec_3_top .brand_story_text .bottom_txt {
+    margin-top: 80px;
+  }
 
-  main .sec_3 .sec_3_top .brand_story_text .bottom_txt > p > br:nth-child(2){
+  main .sec_3 .sec_3_top .brand_story_text .bottom_txt > p > br:nth-child(2) {
+    display: block;
+  }
+
+  main .sec_3 .sec_3_top .brand_story_text .bottom_txt > p > br:nth-child(3) {
+    display: none;
+  }
+
+main .sec_3 .sec_3_bottom .plus{
   display: block;
 }
 
-  main .sec_3 .sec_3_top .brand_story_text .bottom_txt > p > br:nth-child(3){
-  display: none;
+main .sec_3 .sec_3_bottom .plus:hover > a{
+  font-weight: bold;
 }
 
-main .sec_3 .sec_3_bottom{
-  padding: 70px 0 100px;
-}
+  main .sec_3 .sec_3_bottom {
+    padding: 70px 0 100px;
+  }
 
-main .sec_3 .sec_3_bottom > ul > li:nth-child(n+3) {
-display: none;
-}
+  main .sec_3 .sec_3_bottom > ul > li:nth-child(n + 3) {
+    display: none;
+  }
 
-main .sec_4 .sec_4_banner .sec_4_ani_txt > p{
-  font-size: 65px;
-}
+  main .sec_4 .sec_4_banner .sec_4_ani_txt > p {
+    font-size: 65px;
+  }
 
   .product_wrap {
     display: block;
   }
 
-  .swiper-wrapper{
+  main .sec_5 .swiper .swiper-wrapper {
     margin-left: 37px;
   }
-  
-  .p_design{
+
+  main .sec_5 .sec_5_sub_prd .p_design {
     width: 223px;
-    padding: 15px 20px;
-    margin: 0;
   }
 
-
-    main .sec_6 .sec_6_sub_prd_2 .right_img_box > img {
-
-  width: 350px;}
+  main .sec_6 .sec_6_sub_prd_2 .right_img_box > img {
+    width: 350px;
+  }
 
   main .sec_6 .sec_6_sub_prd_2 .left_txt_box > a {
     left: 90px;
   }
 
+  /* sec_7 시작 */
 
- /* sec_7 시작 */
+  main .sec_7 {
+    padding: 110px 0;
+  }
 
-    main .sec_7 {
-        padding: 110px 0;}
-
-          main .sec_7 .sec_7_br_mg .mg_txt {
+  main .sec_7 .sec_7_br_mg .mg_txt {
     margin-left: 20px;
   }
-  
+
   main .sec_7 .sec_7_br_mg .mg_txt > h1 {
     font-size: 55px;
   }
 
-    main .sec_7 .sec_7_br_mg .mg_txt > img {
+  main .sec_7 .sec_7_br_mg .mg_txt > img {
     width: 290px;
     margin-top: -25px;
   }
 
-    main .sec_7 .sec_7_br_mg .mg_subtxt {
-   margin-left: 30px;
-      margin-right: 30px;
-        line-height: 20px;
+  main .sec_7 .sec_7_br_mg .mg_subtxt {
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 20px;
   }
 
   main .sec_7 .sec_7_br_mg .mg_subtxt > p {
     font-size: 12px;
   }
-    main .sec_7 .sec_7_br_mg .mg_subtxt > p > span {
+  main .sec_7 .sec_7_br_mg .mg_subtxt > p > span {
     font-size: 14px;
   }
 
@@ -2380,8 +2462,7 @@ main .sec_4 .sec_4_banner .sec_4_ani_txt > p{
     margin-top: 50px;
   }
 
-
-    main .sec_7 .sec_7_br_mg .img-box > img:nth-child(1) {
+  main .sec_7 .sec_7_br_mg .img-box > img:nth-child(1) {
     width: 128px;
   }
 
@@ -2405,29 +2486,29 @@ main .sec_4 .sec_4_banner .sec_4_ani_txt > p{
 
   main .sec_8 .sec_8_prd {
     width: 300px;
-    margin-left: 50px;
+    margin-left: 30px;
     padding: 0;
   }
 
-  main .sec_8 .sec_8_prd .sec8-swiper{
-     width: 300px;
-  }
-
-  main .sec_8 .sec_8_prd .prd_txt{
+  main .sec_8 .sec_8_prd .sec8-swiper {
     width: 300px;
   }
 
+  main .sec_8 .sec_8_prd .prd_txt {
+    width: 300px;
+  }
 
   .grid_container {
-    display: flex !important;}
+    display: flex !important;
+  }
 
+  footer {
+    height: 850px;
+  }
 
-    footer {
-        height: 100%;}
-
-          footer .wrap {
+  footer .wrap {
     padding-left: 30px;
-        padding-top: 74px;
+    padding-top: 74px;
   }
 
   footer .txt_box {
@@ -2435,10 +2516,9 @@ main .sec_4 .sec_4_banner .sec_4_ani_txt > p{
     gap: 50px;
   }
 
-    footer .bottom_line {
+  footer .bottom_line {
     width: 200px;
     height: auto;
     bottom: 0;
   }
-
 }

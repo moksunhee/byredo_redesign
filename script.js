@@ -19,7 +19,7 @@ var swiper = new Swiper(".sec8-swiper", {
       slidesPerView: 5,
     },
     375: {
-      slidesPerView: 4,
+      slidesPerView: 2,
     },
     0: {
       slidesPerView: 2,
