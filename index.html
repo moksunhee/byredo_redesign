@@ -33,7 +33,9 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
     <!-- ScrollTrigger -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-
+    <!-- 폰트어썸 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css
+"></script>
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -48,6 +50,7 @@
     </div> -->
 
     <!-- 사이트 -->
+    <div class="menu-overlay"></div>
     <header class="header">
       <img
         class="header-top-img"
@@ -60,7 +63,7 @@
             <img src="./BYREDO_img/byredo-seeklogo.png" alt="바이레도로고" />
           </a>
         </div>
-        <div class="ico flex">
+        <div class="ico hamburger-button flex">
           <ul class="flex">
             <li>
               <a href="#">
@@ -129,7 +132,7 @@
       <div class="hammenu">
         <div class="menu_box">
           <div class="txt_top">
-            <div class="logo">
+            <div class="hamberger_logo">
               <img src="./BYREDO_img/byredo-seeklogo.png" alt="로고이미지" />
             </div>
             <div class="close_buttom">
@@ -160,9 +163,6 @@
                   <li><a href="#">Packaging</a></li>
                 </ul>
               </li>
-            </ul>
-            <ul></ul>
-            <ul class="right-menu">
               <li>
                 <a href="#">PERFUME</a>
                 <ul>
@@ -188,10 +188,6 @@
                   <li><a href="#">Byredo Studio</a></li>
                 </ul>
               </li>
-            </ul>
-          </div>
-          <div class="txt_bottom">
-            <ul>
               <li>
                 <a href="#">CUSTOMER CARE</a>
                 <ul>
@@ -333,12 +329,119 @@
           </div>
         </div>
       </div>
+      <div class="sec_5 visible_on_wb con">
+        <div class="sec_5_sub_prd">
+          <p class="p_design">TEA LIMITED EDITION</p>
+          <div class="grid_container">
+            <div class="grid_item">
+              <a href="#"
+                ><img
+                  class="default"
+                  src="./BYREDO_img/4_main_img (1).png"
+                  alt="" /><img
+                  class="hoverimg"
+                  src="./BYREDO_img/4_img (1).png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="grid_item">
+              <a href="#"
+                ><img
+                  class="default"
+                  src="./BYREDO_img/4_main_img (2).png"
+                  alt="" /><img
+                  class="hoverimg"
+                  src="./BYREDO_img/4_img (2).png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="grid_item">
+              <a href="#"
+                ><img
+                  class="default"
+                  src="./BYREDO_img/4_main_img (3).png"
+                  alt="" /><img
+                  class="hoverimg"
+                  src="./BYREDO_img/4_img (3).png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="grid_item">
+              <a href="#"
+                ><img
+                  class="default"
+                  src="./BYREDO_img/4_main_img (4).png"
+                  alt="" /><img
+                  class="hoverimg"
+                  src="./BYREDO_img/4_img (4).png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="grid_item">
+              <a href="#"
+                ><img
+                  class="default"
+                  src="./BYREDO_img/4_main_img (5).png"
+                  alt="" /><img
+                  class="hoverimg"
+                  src="./BYREDO_img/4_img (5).png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="grid_item">
+              <a href="#"
+                ><img
+                  class="default"
+                  src="./BYREDO_img/4_main_img (6).png"
+                  alt="" /><img
+                  class="hoverimg"
+                  src="./BYREDO_img/4_img (6).png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="grid_item">
+              <a href="#"
+                ><img
+                  class="default"
+                  src="./BYREDO_img/4_main_img (7)_2.png"
+                  alt="" /><img
+                  class="hoverimg"
+                  src="./BYREDO_img/4_img (7).png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="grid_item">
+              <a href="#"
+                ><img
+                  class="default"
+                  src="./BYREDO_img/4_main_img (8).png"
+                  alt="" /><img
+                  class="hoverimg"
+                  src="./BYREDO_img/4_img (8).png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="grid_item">
+              <a href="#"
+                ><img
+                  class="default"
+                  src="./BYREDO_img/4_main_img (9).png"
+                  alt="" /><img
+                  class="hoverimg"
+                  src="./BYREDO_img/4_img (9).png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
 
-      <div class="sec_5 con">
+          <a class="a_design" href="#">ALL PRODUCT</a>
+        </div>
+      </div>
+      <div class="sec_5 visible_on_mb con">
         <div class="sec_5_sub_prd swiper">
           <p class="p_design">TEA LIMITED EDITION</p>
-          <div class="grid_container swiper-wrapper">
-            <div class="grid_item swiper-slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <a href="#"
                 ><img
                   class="default"
@@ -349,7 +452,7 @@
                   alt="tea이미지1"
               /></a>
             </div>
-            <div class="grid_item swiper-slide">
+            <div class="swiper-slide">
               <a href="#"
                 ><img
                   class="default"
@@ -360,7 +463,7 @@
                   alt="tea이미지1"
               /></a>
             </div>
-            <div class="grid_item swiper-slide">
+            <div class="swiper-slide">
               <a href="#"
                 ><img
                   class="default"
@@ -371,7 +474,7 @@
                   alt="tea이미지1"
               /></a>
             </div>
-            <div class="grid_item swiper-slide">
+            <div class="swiper-slide">
               <a href="#"
                 ><img
                   class="default"
@@ -382,7 +485,7 @@
                   alt="tea이미지1"
               /></a>
             </div>
-            <div class="grid_item swiper-slide">
+            <div class="swiper-slide">
               <a href="#"
                 ><img
                   class="default"
@@ -393,7 +496,7 @@
                   alt="tea이미지1"
               /></a>
             </div>
-            <div class="grid_item swiper-slide">
+            <div class="swiper-slide">
               <a href="#"
                 ><img
                   class="default"
@@ -404,7 +507,7 @@
                   alt="tea이미지1"
               /></a>
             </div>
-            <div class="grid_item swiper-slide">
+            <div class="swiper-slide">
               <a href="#"
                 ><img
                   class="default"
@@ -415,7 +518,7 @@
                   alt="tea이미지1"
               /></a>
             </div>
-            <div class="grid_item swiper-slide">
+            <div class="swiper-slide">
               <a href="#"
                 ><img
                   class="default"
@@ -426,7 +529,7 @@
                   alt="tea이미지1"
               /></a>
             </div>
-            <div class="grid_item swiper-slide">
+            <div class="swiper-slide">
               <a href="#"
                 ><img
                   class="default"
