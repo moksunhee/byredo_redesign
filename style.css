@@ -72,7 +72,7 @@
 
 @font-face {
   font-family: "TestDomaineSansDisplay-medium";
-  src: url(/font/TestDomaineSansDisplay-Medium-BF66174d37eec1b.otf)
+  src: url(./font/TestDomaineSansDisplay-Medium-BF66174d37eec1b.otf)
     format("opentype");
   font-weight: 300;
   font-style: normal;
@@ -80,7 +80,7 @@
 
 @font-face {
   font-family: "TestDomaineSansDisplay-mediumitalic";
-  src: url(/font/TestDomaineSansDisplay-MediumItalic-BF66174d377687a.otf)
+  src: url(./font/TestDomaineSansDisplay-MediumItalic-BF66174d377687a.otf)
     format("opentype");
   font-weight: 300;
   font-style: normal;
