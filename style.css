@@ -1145,7 +1145,6 @@ header .con .gnb ul > li > ul > li:hover > a {
   right: 0; /* 열림 상태 */
 }
 
-
 /* .header .hammenu {
   width: 360px;
   height: 812px;
@@ -1161,12 +1160,12 @@ header .con .gnb ul > li > ul > li:hover > a {
   padding: 70px 0 0 30px;
   height: 10%;
 }
-.header .hammenu .menu_box .txt_top .close_buttom {
+.header .hammenu .menu_box .txt_top .close_button {
   padding-right: 20px;
   margin-top: -55px;
 }
 
-.header .hammenu .menu_box .txt_top .close_buttom a img {
+.header .hammenu .menu_box .txt_top .close_button a img {
   width: 35px;
 }
 
@@ -1178,37 +1177,20 @@ header .con .gnb ul > li > ul > li:hover > a {
 
 .header .hammenu .menu_box .txt_middle {
   height: 73%;
-
 }
-
-
 
 .header .hammenu .menu_box div ul li a {
   display: block;
   height: 52px;
   line-height: 58px;
-   padding-left: 35px;
-   font-size: 18px;
-   font-weight: 500;   
-}
-
-.header .hammenu .menu_box div ul li a{
-
-}
-
-.header .hammenu .menu_box div ul li ul li {
-  border-top: 1px solid #d1d1d1;
-  color:#5c5c5c
-}
-
-.header .hammenu .menu_box div ul li ul li:last-child{
-    border-bottom: 1px solid #d1d1d1;
+  padding-left: 35px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .header .hammenu .menu_box div ul ul {
   display: none;
 }
-
 
 .header .hammenu .menu_box div ul ul a {
   display: block;
@@ -1216,7 +1198,7 @@ header .con .gnb ul > li > ul > li:hover > a {
   padding-left: 45px;
 }
 
-.header .hammenu .menu_box div > ul> li:last-child > a {
+.header .hammenu .menu_box div > ul > li:last-child > a {
   font-size: 14px;
   /* font-weight: bold; */
   color: #707070;
@@ -1224,17 +1206,15 @@ header .con .gnb ul > li > ul > li:hover > a {
   line-height: 90px;
 }
 
-.header .hammenu .menu_box div ul > li:last-child > ul{
+.header .hammenu .menu_box div ul > li:last-child > ul {
   margin-top: 20px;
 }
 
-.header .hammenu .menu_box div ul > li:last-child > ul > li >a{
+.header .hammenu .menu_box div ul > li:last-child > ul > li > a {
   height: 40px;
   line-height: 45px;
   font-size: 13px;
 }
-
-
 
 .header .hammenu .menu_box div > ul ul a:hover,
 .header .hammenu .menu_box div > ul ul a:focus {
@@ -1255,22 +1235,18 @@ header .con .gnb ul > li > ul > li:hover > a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.35); /* 뒤 어둡게 */
+  background: rgba(0, 0, 0, 0.35); /* 뒤 어둡게 */
   backdrop-filter: blur(2px); /* 고급스럽게 Blur */
   display: none;
   z-index: 900; /* 본문 위 */
 }
 
-
 .hammenu {
   z-index: 1000;
 }
 
-
-
 /* 자식 메뉴 활성 스타일 */
 .menu_box li.active ul li > a {
-  background: #dfdce6;
   color: #555;
   font-weight: bold;
 }
@@ -1280,7 +1256,6 @@ header .con .gnb ul > li > ul > li:hover > a {
   height: 100vh;
   touch-action: none; /* 모바일 터치 스크롤 차단 */
 }
-
 
 .hammenu.open .txt_top .hamberger_logo {
   opacity: 1 !important;
@@ -1295,9 +1270,6 @@ header .con .gnb ul > li > ul > li:hover > a {
 }
 
 /* 햄버거메뉴끝 */
-
-
-
 
 /* main시작 */
 
@@ -1609,11 +1581,9 @@ main .sec_4 .sec_4_img > img {
 
 /* sec_5 시작 */
 
-
-main .visible_on_mb{
+main .visible_on_mb {
   display: none;
 }
-
 
 main .sec_5 {
   text-align: center;
@@ -1629,23 +1599,19 @@ main .sec_5 .sec_5_sub_prd > p {
   display: block;
 }
 
-
 main .sec_5 div .grid_container {
   display: grid;
-  grid-template-columns: 1fr  1fr  1fr;
-  grid-template-rows: 1fr  1fr  1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   width: 750px;
   margin: 0 auto;
-  gap: 10px
+  gap: 10px;
 }
-
 
 main .sec_5 div div div > a > img {
   display: inline-block;
   width: 250px;
-
 }
-
 
 main .sec_5 div div div {
   position: relative;
@@ -1653,7 +1619,6 @@ main .sec_5 div div div {
   height: auto;
   overflow: hidden;
 }
-
 
 main .sec_5 .sec_5_sub_prd > a {
   margin-top: 65px;
@@ -1692,11 +1657,6 @@ main .sec_5 div div div:hover .hoverimg {
 }
 
 /* sec_5 끝 */
-
-
-
-
-
 
 /* sec_6 시작 */
 main .sec_6 {
@@ -2017,7 +1977,7 @@ footer .txt_box .txt03 ul li form > button > img {
 
 input::placeholder {
   color: #b6b5b4;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .checkbox-wrap {
@@ -2167,28 +2127,27 @@ footer .bottom_line {
   }
 
   /* sec_5 시작 */
-main .visible_on_wb{
-  display: none;
-}
+  main .visible_on_wb {
+    display: none;
+  }
 
-main .visible_on_mb{
-  display: block;
-  overflow: hidden;
-  padding-top: 50px;
-}
+  main .visible_on_mb {
+    display: block;
+    overflow: hidden;
+    padding-top: 50px;
+  }
 
-main .visible_on_mb .swiper {
-  overflow: hidden;
-  padding: 40px 0;
-}
+  main .visible_on_mb .swiper {
+    overflow: hidden;
+    padding: 40px 0;
+  }
 
-main .visible_on_mb .swiper-slide a img {
-  width: 100%;
-  max-width: 250px;
-  display: block;
-  margin: 0 auto;
-}
-
+  main .visible_on_mb .swiper-slide a img {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+  }
 
   main .sec_5 div .grid_container {
     grid-template-columns: 1fr 1fr;
@@ -2418,6 +2377,10 @@ main .visible_on_mb .swiper-slide a img {
   footer .txt_box .txt03 ul li form > button > img {
     width: 40px;
   }
+
+  input::placeholder {
+    font-size: 14px;
+  }
 }
 
 /* Small Mobile (375px 이하) */
@@ -2560,31 +2523,31 @@ main .visible_on_mb .swiper-slide a img {
     display: block;
   }
 
-/* sec_5 시작 */
+  /* sec_5 시작 */
 
-main .visible_on_wb{
-  display: none;
-}
+  main .visible_on_wb {
+    display: none;
+  }
 
-main .visible_on_mb{
-  display: block;
-  overflow: hidden;
-  padding-top: 50px;
-}
+  main .visible_on_mb {
+    display: block;
+    overflow: hidden;
+    padding-top: 50px;
+  }
 
-.visible_on_mb .swiper-slide a img {
-  width: 230px;
-  display: block;
-  margin: 0 auto;
-}
+  .visible_on_mb .swiper-slide a img {
+    width: 230px;
+    display: block;
+    margin: 0 auto;
+  }
 
-main .sec_5 .sec_5_sub_prd  p {
-width: 230px;
-}
+  main .sec_5 .sec_5_sub_prd p {
+    width: 230px;
+  }
 
-main .sec_8 .sec_8_prd .prd_txt > p{
-  margin: 0 auto;
-}
+  main .sec_8 .sec_8_prd .prd_txt > p {
+    margin: 0 auto;
+  }
 
   main .sec_6 .sec_6_sub_prd_2 .right_img_box > img {
     width: 350px;
@@ -2593,9 +2556,9 @@ main .sec_8 .sec_8_prd .prd_txt > p{
   main .sec_6 .sec_6_sub_prd_2 .left_txt_box > a {
     left: 90px;
   }
-main .sec_6 .sec_6_sub_prd_2 .left_txt_box > p{
-  left: 60px;
-}
+  main .sec_6 .sec_6_sub_prd_2 .left_txt_box > p {
+    left: 60px;
+  }
 
   /* sec_7 시작 */
 
@@ -2682,7 +2645,6 @@ main .sec_6 .sec_6_sub_prd_2 .left_txt_box > p{
   footer .wrap {
     padding-left: 30px;
     padding-top: 74px;
-
   }
 
   footer .txt_box {

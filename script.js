@@ -88,11 +88,11 @@ $(function () {
 
     if ($submenu.is(":visible")) {
       // 부드럽게 사라짐
-      $submenu.fadeOut(300);
+      $submenu.fadeOut(0);
       $parent.removeClass("active");
     } else {
       // 다른 서브메뉴는 부드럽게 닫고
-      $(".menu_box li ul:visible").fadeOut(300);
+      $(".menu_box li ul:visible").fadeOut(0);
       $(".menu_box li.active").removeClass("active");
 
       // 클릭한 메뉴만 부드럽게 열림
@@ -108,14 +108,14 @@ $(function () {
   $(".hamburger-button").on("click", function (e) {
     e.preventDefault(); // 화면 위로 튀는 현상 방지
     $(".hammenu").addClass("open");
-    $(".menu-overlay").fadeIn(300);
+    $(".menu-overlay").fadeIn(200);
     $("body").addClass("no-scroll");
   });
 
   // 메뉴 닫기 (공통 함수)
   function closeMenu() {
     $(".hammenu").removeClass("open");
-    $(".menu-overlay").fadeOut(300);
+    $(".menu-overlay").fadeOut(200);
     $("body").removeClass("no-scroll");
 
     // 🔥 닫을 때 메뉴 상태 리셋!
@@ -124,7 +124,7 @@ $(function () {
   }
 
   // X 버튼 닫기
-  $(".close_buttom a").on("click", function (e) {
+  $(".close_button a").on("click", function (e) {
     e.preventDefault();
     closeMenu();
   });
